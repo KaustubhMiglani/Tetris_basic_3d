@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GridMap.gd" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="MeshInstance" type="MeshInstance"]
+transform = Transform( 10, 0, 0, 0, 20, 0, 0, 0, 1, 4.5, 9, 0 )
+visible = false
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.05, 0, 0, 0, 1, -0.45, -0.475, 0 )
+data = {
+"cells": PoolIntArray(  )
+}
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_clip_": 0,
+"_editor_floor_": Vector3( 0, -4, 0 )
+}
